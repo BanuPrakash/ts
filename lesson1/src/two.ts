@@ -49,3 +49,27 @@ function doTask() {
     return "Hello World";
     console.log("Task executed"); // unreachable code
 }
+
+//Optional parameters ?
+
+const addAll = (a: number, b: number, c?:number) : number => {
+    if(typeof c !== 'undefined') {
+        return a + b + c;
+    }
+    return a + b;
+}
+
+addAll(3,4);
+addAll(3,5,1); // valid
+
+// default values
+const sumAll = (a: number = 10, b: number, c:number = 2) : number => {
+    if(typeof c !== 'undefined') {
+        return a + b + c;
+    }
+    return a + b;
+}
+
+console.log(sumAll(2, 3, 5));
+console.log(sumAll(2, 3)); // c is 2
+console.log(sumAll(undefined, 3, 5));  // a is 10

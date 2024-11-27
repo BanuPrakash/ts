@@ -82,3 +82,44 @@ tsc
  C) RegExp
  D) function type
  E) Array type 
+
+ ```
+ Controlling Globals
+
+  // "types": [],    
+
+  Suppose we install jQuery DOM library; this by default makes jQuery [$] as global member
+  "types": ["jQuery"],
+
+  with this we can straight away use it in my ts code $("div"); 
+  if not we need to explicilty import
+
+  import * as jquery from 'jquery'
+
+Other scenario is in NodeJS lots of members like __dirname, __filename
+are declared as global members
+
+```
+
+//Optional parameters ?
+// default values
+
+undefined vs null
+
+let data; //undefined
+let data = null; 
+prefer null for APIs
+In NodeJS callbacks are passed with null instead of undefined if its no relavent
+
+```
+fs.readFile('Demo.txt', 'utf8', function (err, data) {
+    if(err != null) {
+        console.log(data);
+    }
+});
+
+```
+
+E) any vs unknown
+
+
