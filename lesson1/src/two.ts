@@ -47,7 +47,7 @@ console.log(high);
 //  "allowUnreachableCode": false,   
 function doTask() {
     return "Hello World";
-    console.log("Task executed"); // unreachable code
+    // console.log("Task executaed"); // unreachable code
 }
 
 //Optional parameters ?

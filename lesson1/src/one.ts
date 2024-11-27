@@ -7,4 +7,4 @@ let x = 10; // infer to number
 
 let y = "2";
 
-console.log( x / y); // lib.dom.d.ts
+// console.log( x / y); // lib.dom.d.ts
