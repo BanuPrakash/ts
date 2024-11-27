@@ -64,7 +64,7 @@ changes:
  "rootDir": "./src",  
   "outDir": "./build/js",
   "target": "es2016",  
-   "noEmitOnError": true, // compile to JS only if no ts errors
+  "noEmitOnError": true, // compile to JS only if no ts errors
 
 tsc
 
@@ -73,3 +73,12 @@ tsc
  ESM --> uses export and import
   
  "include": ["src/**/*.ts"] having this tsc will ignore ts files outside of rootDir
+
+ ======
+
+ Data types:
+ A) basic data types: string, number, boolean
+ B) Enum types
+ C) RegExp
+ D) function type
+ E) Array type 
