@@ -247,3 +247,57 @@ Use Cases:
 * Type specificity
 * prevent accedental mixing
 
+
+======================
+
+void
+void operator evaluated the given expression and returns undefined
+===============
+
+The interface type
+used for shape like "type" and behaviour.
+
+interface interfaceName {
+    // shape and behaviour
+}
+
+```
+    type Counter = {
+        interval: number
+    }
+
+    interface Counter {
+        interval : number;
+        (start: number): string;
+        reset() : void
+    }
+
+    function getCounter(): Counter {
+        let counter = function(start: number) {} as Counter;
+        counter.interal = 100;
+        counter.reset = function() {}
+        return counter;
+    }
+```
+
+Prefer type over interface until required.
+* interface is specific to object
+type Address = string; // valid
+interface Address = string; // invalid
+
+* types allow union types
+ type Address = string | string[];
+* interface can extend another interface
+* interface redeclaration will merge
+* using utilities like omit, pick, ... on type is easier than on interface
+* Extracting type from something else is possible
+
+=================
+
+* interface and class
+* using JS in TS
+* TS utilities
+* Decorators
+* Mixins
+* Jest for unit testing TS
+
