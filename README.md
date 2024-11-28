@@ -295,9 +295,59 @@ interface Address = string; // invalid
 =================
 
 * interface and class
+* Generics
 * using JS in TS
 * TS utilities
 * Decorators
 * Mixins
 * Jest for unit testing TS
 
+============================
+
+Day 1 Recap:
+basic types: string, number, boolean
+enum, RegExp, type
+branded type, union type, intersection type
+recursive type
+interface
+
+==================
+Day 2
+ts-node is a TypeScript execution engine and REPL for Node.js.
+It JIT transforms TypeScript into JavaScript, enabling you to directly execute TypeScript on Node.js without precompiling
+
+ts-node a.ts --> in Memory we have JS transpilled code and execute it
+
+npx ts-node ./src/indexSigExample.ts
+
+Index Signatures in TypeScript:
+can be used with "type" or "interface"
+In TypeScript, an index signature allows you to define the type of values that an object can hold for keys that aren't explicitly defined. 
+It's a way to describe objects with dynamic properties.
+
+```
+    interface Transactions {
+        [key:string]: number
+        pizza:number,
+        books: number
+    }
+
+    const todaysTx: Transactions = {
+        pizza: 343,
+        books: 623
+    }
+    // find total
+```
+
+* using keyof instead of Index signature
+* Record utlity
+
+===============
+
+class Type
+* Specialization relationship ==> extends
+* Realization relationship ==> implements
+
+Unlike classes interface can extend multiple classes
+interface A extends ClassA, ClassC {}
+extends only members not their implementations
