@@ -375,9 +375,14 @@ Generic Functions
 -> function which can accept function as arguments
 filter, forEach, map, reduce,... ==> all these functions are available for array type
 -> function which can return a function
+Closure
 
 https://rxmarbles.com/
 
+Memoization is a technique that speeds up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again
+
+Closure:
+returned function can access all the members of outer function
 
 
 

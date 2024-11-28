@@ -20,3 +20,19 @@ export function map<T, R>(elems: T[], transformFn: (elem: T) => R): R[] {
     return results;
 }
 //let mobiles:Product[] = filter(products, (p) => p.category === 'mobile');
+
+
+// in react React.memo(ProductCard); High Order Component
+
+export function memo(fn: Function) {
+    const cache = new Map(); // closure
+    return function (this: any, ...args: any[]) {
+        const key = args.toString();
+        if (cache.has(key)) {
+            return cache.get(key);
+        }
+        const result = fn.apply(this, args); // call and apply
+        cache.set(key, result);
+        return result;
+    }
+}
