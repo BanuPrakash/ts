@@ -384,6 +384,15 @@ Memoization is a technique that speeds up computer programs by storing the resul
 Closure:
 returned function can access all the members of outer function
 
+Unit testing
+* Jasmine
+* mocha
+* JEST
+
+ts-jest for unit testing typescipt
+
+npm i -D ts-jest @types/jest
+npx ts-jest config:init
 
 
 

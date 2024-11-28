@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,9 @@
     "underscore": "^1.13.7"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/react": "^18.3.12",
-    "@types/underscore": "^1.13.0"
+    "@types/underscore": "^1.13.0",
+    "ts-jest": "^29.2.5"
   }
 }

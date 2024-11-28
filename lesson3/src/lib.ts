@@ -24,6 +24,7 @@ export function map<T, R>(elems: T[], transformFn: (elem: T) => R): R[] {
 
 // in react React.memo(ProductCard); High Order Component
 
+// revist after discussing TS util like ReturnType, Parameters,...
 export function memo(fn: Function) {
     const cache = new Map(); // closure
     return function (this: any, ...args: any[]) {
