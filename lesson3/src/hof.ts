@@ -1,4 +1,4 @@
-import {filter} from './lib';
+import {filter, map} from './lib';
 
 let data:number[] = [5,1,2,6,8,12];
 
@@ -27,7 +27,7 @@ console.log(mobiles);
 
 let names:string[] = map(products, p => p.name);
 // names will be iPhone, sony, Wacom, ...
-
+console.log(names)
 function toDiv(product: Product) {
     return `
         <div className='card'>
@@ -42,3 +42,4 @@ function toDiv(product: Product) {
 }
 
 let divs = map(products, toDiv);
+console.log(divs);
