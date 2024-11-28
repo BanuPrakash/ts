@@ -351,3 +351,18 @@ class Type
 Unlike classes interface can extend multiple classes
 interface A extends ClassA, ClassC {}
 extends only members not their implementations
+
+===============
+
+Using JS in TS
+
+npm i underscore react
+* by using type definition files
+* DefinitelyTyped
+https://github.com/DefinitelyTyped/DefinitelyTyped
+
+npm i -D @types/react @types/underscore
+npm i -D @types/node
+
+==============
+

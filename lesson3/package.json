@@ -10,6 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^5.7.2"
+    "react": "^18.3.1",
+    "typescript": "^5.7.2",
+    "underscore": "^1.13.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/underscore": "^1.13.0"
   }
 }
