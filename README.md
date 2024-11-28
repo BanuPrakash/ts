@@ -394,5 +394,9 @@ ts-jest for unit testing typescipt
 npm i -D ts-jest @types/jest
 npx ts-jest config:init
 
+========
 
-
+* Generics and keyof
+* Conditional Types using Generics
+* Mapped Types
+A mapped type is a generic type which uses a union of PropertyKey s (frequently created via a keyof ) to iterate through keys to create a type.
