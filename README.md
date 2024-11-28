@@ -364,5 +364,21 @@ https://github.com/DefinitelyTyped/DefinitelyTyped
 npm i -D @types/react @types/underscore
 npm i -D @types/node
 
-==============
+======================
+
+Generics: enable write code that can work with variety of data types while maintainig type safety
+any or unknown 
+function doTask(elems: any[]) {}
+
+Generic Functions
+* High Order Functions
+-> function which can accept function as arguments
+filter, forEach, map, reduce,... ==> all these functions are available for array type
+-> function which can return a function
+
+https://rxmarbles.com/
+
+
+
+
 
