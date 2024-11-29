@@ -516,3 +516,9 @@ Metadata Proposal - https://rbuckton.github.io/reflect-metadata/
 Object.defineProperty
 
 npm i reflect-metadata
+
+===
+
+Mixins
+function that takes constructor, creates a class with new functionalities return a new class
+
