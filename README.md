@@ -424,3 +424,23 @@ The infer keyword
 used with Conditional type to extract or "infer" a type from another type.
 Allows to create more dynamic types, flexible type
 
+```
+type Capitalized<S> = S extends `${infer C}${infer T}` ? 
+            `${C extends keyof CapitalizedChars ? CapitalizedChars[C]: C}${T}` : S
+
+sunday
+
+S extends `${infer C}${infer D}${infer T}`
+
+sunday ==> 
+s ==> C
+u ==> D
+nday ==> T
+
+// space
+S extends `${infer C} ${infer D}`
+
+Hello World
+C ==> Hello
+D ==> World
+``

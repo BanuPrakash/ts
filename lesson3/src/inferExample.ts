@@ -29,3 +29,11 @@ type MyParam<T> = T extends (...args: infer P) => any ? P : never
 type Params = MyParam<typeof add>
 
 const paramData: Params = [4, 7, "add"];
+
+type UserT = {
+    id: number;
+    name: string
+}
+function doTaskss(user:UserT){
+
+}
