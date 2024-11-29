@@ -505,3 +505,14 @@ Class Decorator functions: should take constructor as argument
 
 Property Decorator: Field Decorator
 function (target:any, propertyKey:string) {}
+
+Method level decorator
+function (target:any, methodName: string, descriptor?:PropertyDescriptor)
+
+====================
+
+Metadata Proposal - https://rbuckton.github.io/reflect-metadata/
+"emitDecoratorMetadata": true,  
+Object.defineProperty
+
+npm i reflect-metadata

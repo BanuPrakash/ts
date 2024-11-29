@@ -6,6 +6,7 @@ export default class Book {
     @Range({ min: 0, max: 100 })
     price: number = 10;
 
+    
     // set fullName(n:string) {
 
     // }
