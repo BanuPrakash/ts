@@ -444,3 +444,61 @@ Hello World
 C ==> Hello
 D ==> World
 ``
+
+TypeScript utilities:
+1) Partial
+2) Pick
+3) Omit
+4) NonNullable
+5) ReturnType
+6) Parameters
+7) Awaited
+8) Capitalize
+9) Required
+
+https://www.typescriptlang.org/docs/handbook/utility-types.html
+
+============
+
+Decorators and Mixins
+-> code reusability and help avoid limitations associated with multiple inheritance
+-> applicable for object types
+
+Decorators:
+1) class decorator
+2) method decorator
+3) property decorator
+4) parameter decorator
+
+Specialization vs Decorator
+
+React uses Specialization 
+```
+    public class ProductCard extends Component {
+        componentDidMount() {
+            //
+        }
+    }
+ 
+```
+
+Angular uses Decorator pattern
+```
+@Component({
+    template: `
+        <div>
+            {name}
+        <div>
+    `,
+    styleUrl: '../styles/style.css'
+})
+public class ProductCard {
+    name: string;
+}
+ProductCard will have name and template, styleUrl
+```
+
+New project:
+"experimentalDecorators": true,
+
+Class Decorator functions: should take constructor as argument
