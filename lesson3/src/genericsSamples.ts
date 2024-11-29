@@ -6,17 +6,27 @@ let per = { name: 'George', age: 30, city: 'Delhi' }
 
 getProperty(per, "age"); // 30
 
-// will check it 
-// type NonNull<T> = T extends null | undefined ? never : T
 
-// function addProduct(name: string, price: NonNull<number>) {
-//     // todo
-// }
+type NonNull<T> = T extends null | undefined ? never : T
+type Name = string | null;
 
-// addProduct("iPhone", null);
+type NonNullName = NonNull<Name>; // This will be just "string" because "null" is excluded
+
+function greet(name: NonNullName) {
+    console.log(`Hello, ${name}`); // This will guarantee that "name" is always a string and not null
+} 
+
+// greet(null);
+
+// type DataType = string | null | undefined
+
+// type NonNullDataType = NonNull<DataType>
+
+// let data:NonNullDataType = "Hello";
+// let datas: DataType = null;
 
 type Immutable<T> = {
-    readonly [P in keyof T]: T[P]
+    readonly [P in keyof T]: T[P] 
 }
 
 type Mutable<T> = {
@@ -24,14 +34,14 @@ type Mutable<T> = {
 }
 interface Point {
     x: number;
-    y : number
+    y: number
 }
 
-type ReadOnlyPoint =  Immutable<Point>;
+type ReadOnlyPoint = Immutable<Point>;
 
 type MutablePoint = Mutable<ReadOnlyPoint>;
 
-let point: ReadOnlyPoint = {x: 4, y: 5};
+let point: ReadOnlyPoint = { x: 4, y: 5 };
 
 // point.x = 22; //readonly
 
@@ -39,11 +49,13 @@ let point: ReadOnlyPoint = {x: 4, y: 5};
 
 type UserType = {
     id: string;
-    name?:string;
-    age?:number;
+    name?: string;
+    age?: number;
 }
 
 type Concrete<T> = {
     [P in keyof T]-?: T[P]
 }
 type ConcreteUserType = Concrete<UserType>
+
+let nos = ["34",""]

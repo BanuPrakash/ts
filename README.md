@@ -400,3 +400,27 @@ npx ts-jest config:init
 * Conditional Types using Generics
 * Mapped Types
 A mapped type is a generic type which uses a union of PropertyKey s (frequently created via a keyof ) to iterate through keys to create a type.
+
+===
+class generics
+TS utilities, Decorator, Mixin, ..
+
+========================
+
+Day 2 Recap:
+1) Generics
+2) HOF with Generics
+3) Memoization with closure
+4) Unit testing: ts-jest which internally uses jest and ts-node for on the fly transpile and executing
+5) Index paramter, keyof
+6) Conditional type
+7) Mapped Type 
+
+===============
+
+Day 3
+
+The infer keyword
+used with Conditional type to extract or "infer" a type from another type.
+Allows to create more dynamic types, flexible type
+
