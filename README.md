@@ -443,7 +443,7 @@ S extends `${infer C} ${infer D}`
 Hello World
 C ==> Hello
 D ==> World
-``
+```
 
 TypeScript utilities:
 1) Partial

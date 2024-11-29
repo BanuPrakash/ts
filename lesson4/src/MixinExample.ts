@@ -17,6 +17,7 @@ function Activatable<TBase extends ConstructorType>(Base: TBase) {
         }
     }
 }
+
 class Animal {
     name = "Terry";
 }
