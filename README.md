@@ -502,3 +502,6 @@ New project:
 "experimentalDecorators": true,
 
 Class Decorator functions: should take constructor as argument
+
+Property Decorator: Field Decorator
+function (target:any, propertyKey:string) {}
